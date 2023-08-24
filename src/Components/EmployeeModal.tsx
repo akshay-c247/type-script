@@ -1,20 +1,17 @@
+/* eslint-disable semi,no-multi-spaces */
+import React from "react";
+//component
 import { Iemployee } from "./Employee.type";
 import "./EmployeeModal.style.css";
-   
-
 type props ={
     onClose:() =>void
     data:Iemployee
-}
-
-
+};
 const EmployeeModal = (props:props) => {
-    const {onClose ,data}= props
+    const {onClose ,data}= props;
   return (
     <div>
         <div id="myModal" className="modal">
-
-
 <div className="modal-content">
   <span className="close" onClick={onClose}>&times;</span>
  <div>
@@ -33,10 +30,15 @@ const EmployeeModal = (props:props) => {
     </div>
  </div>
 </div>
-
 </div>
-
-  )
-}
-
+  );
+};
 export default EmployeeModal;
+   
+
+
+
+
+
+
+
